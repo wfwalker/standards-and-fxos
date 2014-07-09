@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300italic')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Open Standards and Open Web Apps
@@ -23,28 +24,26 @@ html
       section
         h2 the power of open standards
         ul
-          li competing implementations, we all win
-          li transferrable skills for developers
+          li competing implementations
+          li transferrable skills
+          li mashups
 
-      section
+      section.giffy-fit(style="background-image: url(images/sad-firefox.jpg)")
         h2 the world of mobile
         ul
-          li closed networks, devices, ecosystems
-          li native apps
-          li hobbled web engines
+          li closed networks and devices
+          li nontransferrable skills 
+          li reinvent and reimplement
 
-      section
-        h2 like the bad old days  
-
-      section
+      section.giffy-fit(style="background-image: url(images/a-new-hope.jpg)")
         h2 a new hope
 
-      section
+      section.giffy-fit(style="background-image: url(images/a-new-hope.jpg)")
         h2 Firefox OS
         ul
-          li made entirely in HTML, JS, CSS
-          li entirely free
-          li supported by open web app ecosystem
+          li HTML, JS, CSS
+          li Geolocation API
+          li ServiceWorkers
 
       section
         h2 how is this possible?
@@ -52,33 +51,6 @@ html
           li bring our gecko awesome to mobile
           li mad web skills become mad mobile skills
           li mobile-ready sites become pre-installed apps
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        hr
-        pre
-          code.language-javascript.
-            bespoke.from('article', {
-              keys: true,
-              touch: true,
-              hash: true,
-              state: true,
-              bullets: 'li, .bullet'
-            });
-
-      section
-        h2.bullet Just the beginning...
-        hr
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        hr
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
