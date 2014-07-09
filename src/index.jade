@@ -16,12 +16,18 @@ html
 
     article
 
-      section
-        h2 Open Standards
-        h2 Open Web Apps
-        h3 Bill Walker
+      section.giffy-fit(style="background-image: url(images/sally-lightfoot.jpg)")
+        h2 Going Mobile
+        h3(style='color: white') Web Standards and Firefox OS
+        h3(style='color: white') Bill Walker
 
-      section
+      section.giffy-fit(style="background-image: url(images/sally-lightfoot.jpg)")
+        h2 Bill Walker
+        ul
+          li Partner Engineering
+          li Web Runtime
+
+      section.giffy-fit(style="background-image: url(images/circuit.jpg)")
         h2 the power of open standards
         ul
           li competing implementations
@@ -29,31 +35,57 @@ html
           li mashups
 
       section.giffy-fit(style="background-image: url(images/sad-firefox.jpg)")
-        h2 the world of mobile
+        h2 the mobile status quo
         ul
           li closed networks and devices
           li nontransferrable skills 
           li reinvent and reimplement
+        aside
+          pre
+            |while we were winning the desktop, smartphone makers started it all over again 
 
       section.giffy-fit(style="background-image: url(images/a-new-hope.jpg)")
         h2 a new hope
+        aside
+          pre
+            |andreas gal and chris jones had a crazy idea 
+            |the operators would use this to get theirs back
 
       section.giffy-fit(style="background-image: url(images/a-new-hope.jpg)")
         h2 Firefox OS
         ul
-          li HTML, JS, CSS
-          li Geolocation API
-          li ServiceWorkers
+          li HTML
+          li JavaScript
+          li CSS
+          li WebGL
+          li WebRTC
+        aside
+          pre
+            |everything we've done for 15 years leading up to this 
+            |performance of existing standards peaking
+            |new capabilities emerging at the right moment
 
-      section
-        h2 how is this possible?
+      section.giffy-fit(style="background-image: url(images/circuit.jpg)")
+        h2 how do we do it?
         ul
           li bring our gecko awesome to mobile
           li mad web skills become mad mobile skills
           li mobile-ready sites become pre-installed apps
+        aside
+          pre
+            |if you can make a responsive web site using AJAX 
+            |you are on the way to making your open web app
+
+      section.giffy-fit(style="background-image: url(images/offline.jpg)")
+
+      section.giffy-fit(style="background-image: url(images/shotclock-appmanager.png)")
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-convenient/dist/bespoke-convenient.min.js')
+    script(src='bower_components/bespoke-indexfinger/dist/bespoke-indexfinger.min.js')
+    script(src='bower_components/bespoke-jumpy/dist/bespoke-jumpy.min.js')
+    script(src='bower_components/bespoke-secondary/dist/bespoke-secondary.min.js')
     script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
     script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
