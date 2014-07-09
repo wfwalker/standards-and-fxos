@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GUM Mirror</title>
+  </head>
+  <body>
+    <video id="video"/>
+    <script>
+      navigator.getUserMedia = ( navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia);
+
+      navigator.getUserMedia(
+        // constraints
+        {
+           video: true,
+           audio: true
+        },
+
+        // successCallback
+        function(localMediaStream) {
+           var video = document.getElementById('video');
+           video.src = window.URL.createObjectURL(localMediaStream);
+           video.onloadedmetadata = video.play.bind(video);
+           // Do something with the video here, e.g. video.play()
+        },
+
+        // errorCallback
+        function(err) {
+           console.log("The following error occured: " + err);
+        });
+
+
+
+      // gum.call(navigator, {
+      //   video: true,
+      // }, function (stream) {
+      //   var video = document.getElementById('video');
+      //   video.src = URL.createObjectURL(stream);
+      //   video.onloadedmetadata = video.play.bind(video);
+      // }, function (error) {
+      //   console.error(error);
+      // });
+    </script>
+  </body>
+</html>
